@@ -1,4 +1,6 @@
 from setuptools import find_packages, setup
+import os
+from glob import glob
 
 package_name = 'my_robot_nodes'
 
@@ -10,6 +12,8 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
+        # Automatically install all launch files into the package share directory
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -24,6 +28,8 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            # Registered executable script for the turn_away node
+            'turn_away = my_robot_nodes.turn_away:main',
         ],
     },
 )
