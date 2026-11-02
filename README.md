@@ -17,6 +17,10 @@ A ROS 2 differential-drive robot simulation project featuring URDF/Xacro robot m
 <img width="933" height="676" alt="image" src="https://github.com/user-attachments/assets/f8536b02-e6f1-4938-9374-3702a1b73c7e" />
 
 ##
+<img width="1024" height="722" alt="image" src="https://github.com/user-attachments/assets/71457fe6-4c7d-40ba-acee-80692cc63fc1" />
+
+
+##
 <img width="636" height="639" alt="image" src="https://github.com/user-attachments/assets/f418bc02-a2e7-4033-bcfb-0bf267f0bbc8" />
 
 
